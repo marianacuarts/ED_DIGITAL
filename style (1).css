@@ -1,0 +1,118 @@
+/* Variáveis globais do :root */
+:root {
+    --cor-primaria: #183C63;
+    --cor-secundaria: #3782d2;
+    --cor-fundo: #ffffff;
+    --cor-texto: #151428;
+    --cor-contraste: #f3eef7;
+    --cor-botao: #f9f9f9;
+    --fonte-texto: 'Segoe UI', sans-serif;
+}
+
+/* Regras do Modo Escuro */
+.tema-escuro {
+    --cor-primaria: #183C63;
+    --cor-secundaria: #64b5f6;
+    --cor-fundo: #151428;
+    --cor-texto: #ffffff;
+    --cor-contraste: #c9e3ff;
+    --cor-botao: #222040;
+}
+
+body {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px;
+}
+
+main {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid var(--cor-primaria);
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+    flex: 1 1 25%;
+    background-color: var(--cor-fundo);
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+button {
+    background-color: var(--cor-botao);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-primaria);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.artigo-autor {
+    font-weight: bold;
+}
+
+.artigo-fonte {
+    font-size: 0.85em;
+    font-style: italic;
+    color: var(--cor-texto);
+}
+
+.artigo-fonte a {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+.artigo-fonte a:hover {
+    opacity: 0.8;
+}
+
+/* Estilização do Botão Flutuante de Tema */
+.btn-tema-escuro {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    font-size: 32px;
+    padding: 12px;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Ajustes para o Tema Escuro */
+.tema-escuro a {
+    color: var(--cor-secundaria);
+}
+
+.tema-escuro p {
+    color: var(--cor-texto);
+}
+
+.tema-escuro header p {
+    color: var(--cor-contraste);
+}
